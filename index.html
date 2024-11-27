@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+  
+       <img src="./assets/icons/Frame.svg" alt="">
+ 
+
+    <main>
+        <form>
+            <label for="amount">valor</label>
+            <input 
+            type="text" 
+            name="amount" 
+            id="amount"
+            placeholder="0"
+            required>
+
+            <label for="currency">moeda</label>
+            <select name="currency" id="currency" required>
+            
+                <option value="" disabled selected hidden>
+                    Selecione a moeda
+                </option>
+                <option value="USD">Dólar Americano</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="IENE">Iene</option>
+                <option value="CNY">Yuan Chinês</option>
+                <option value="ARS">Peso Argentino</option>
+                <option value="CHF">Franco Suiço</option>
+                <option value="TL">Lira Turca</option>
+                <option value="JPY">Iene Japonês</option>
+                <option value="KRW">Won</option>
+            </select>
+
+           <button type="submit">Converter em reais</button>
+
+           <footer>
+            <span class="description">US$ 1 = R$ 5,78 </span>
+            <h1 id="result">R$ 577,00 reais</h1>
+           </footer>
+        
+        </form>
+    </main>
+
+<script src="./js/js.js"></script>
+     
+</body>
+</html>
